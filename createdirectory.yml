@@ -4,6 +4,6 @@
    tasks:
    - name: create file
      file:
-       path: /root/test/kiran.xml
+       path: /home/kiran/my.xml
        state: touch
        mode: 0777
