@@ -1,5 +1,5 @@
 ---
- - hosts: locathost
+ - hosts: localhost
    become: true
    tasks:
     - name: create directory
