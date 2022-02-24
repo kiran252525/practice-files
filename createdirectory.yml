@@ -2,8 +2,8 @@
  - hosts: all
    become: true
    tasks:
-   - name: create directory
-     file:
-       path: /home/kiran/myhome
-       state: directory
-       mode: 0777
+    - name: create directory
+      file:
+        path: /home/kiran/myhome
+        state: directory
+        mode: 0777
