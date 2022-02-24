@@ -1,5 +1,6 @@
 ---
- - hosts: localhost
-   become: true
-   tasks:
-     - ping
+ - name: Create a directory 
+  ansible.builtin.file:
+    path: /root/some_directory
+    state: directory
+    mode: '0755'
