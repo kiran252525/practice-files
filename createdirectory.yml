@@ -1,11 +1,9 @@
 ---
  - hosts: localhost
    become: true
-   become_user: root
    tasks:
    - name: create file
-     become_user: root
      file:
-       path: /root/sanvika.xml
-       state: touch
+       path: /root/test/kiran
+       state: directory
        mode: 0777
