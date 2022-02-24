@@ -4,6 +4,6 @@
    tasks:
     - name: create directory
       file:
-        path: /home/kiran/myhome
+        path: "/home/kiran/myhome"
         state: directory
         mode: 0777
