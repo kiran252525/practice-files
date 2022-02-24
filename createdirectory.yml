@@ -1,5 +1,11 @@
 ---
- - name: Creates directory
-   file:
-     path: /root/kiran
-     state: directory
+ - hosts: localhost
+   become: true
+   become_user: root
+   tasks:
+   - name: create file
+     become_user: root
+     file:
+       path: /root/sanvika.xml
+       state: touch
+       mode: 0777
