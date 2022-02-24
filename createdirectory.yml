@@ -1,6 +1,5 @@
 ---
- - name: Create a directory 
-  ansible.builtin.file:
-    path: /root/some_directory
-    state: directory
-    mode: '0755'
+ - name: Creates directory
+   file:
+     path: /root/kiran
+     state: directory
